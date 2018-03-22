@@ -25,7 +25,6 @@ namespace deMorgansTheorem
             else
                 Console.WriteLine("A & B = {0}", A & B);
 
-
             // Условие после применения теоремы Де Моргана.
             if (!(!A & !B))
                 Console.WriteLine("!(!A & !B) = {0}", !(!A & !B));
@@ -36,6 +35,15 @@ namespace deMorgansTheorem
                 Console.WriteLine("!(!A | !B) = {0}", !(!A | !B));
             else
                 Console.WriteLine("!(!A | !B) = {0}", !(!A | !B));
+
+            //Альтернативный вариант.
+
+
+            bool X = false;
+            bool Y = false;
+
+            Console.WriteLine("{0} || {1} = {2}", X, Y, X || Y);
+            Console.WriteLine("!(!{0} && !{1}) = {2}", X, Y, !(!X && !Y));
 
             Console.ReadKey();
 
